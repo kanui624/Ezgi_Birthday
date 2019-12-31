@@ -1,1 +1,71 @@
 @import "bootstrap"; 
+
+@import "bootstrap";
+
+
+
+body {background: #FAF0E6}
+
+h1 {color: white;
+    text-align: center;}
+
+h2 {}
+
+h3 {font-size: 20px;
+    font-weight: 5px;
+    margin-bottom: 0;
+    font-family: unset;}
+
+.img-fluid {transition: transform .25s;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 30px;
+            height: 140px;}
+
+.img-fluid:hover {transform: scale(1.2);}
+
+.img-fluid-port {transition: transform .3s;
+                 border-radius: 10px;
+                 height: 200px;}
+
+.img-fluid-port:hover {transform: scale(1.85);}
+
+.back {transition: transform .3s;
+       position: fixed;
+       margin: auto;
+       height: 50px;
+       border-radius: 30px}
+
+.back:hover {transform: scale(1.15);}
+
+.photo {text-align: center}
+
+.line {border-top: 5px double white;
+       width: 20px;}
+
+.line_first {border-top: 5px double white;
+             width: 20px;
+             margin-top: 0;}
+
+.modal-trigger {text-align: center}
+
+.headline {text-align: center;
+           color: white;
+           font-family: Courier New Header;}
+
+
+.modal_button {transition: transform .3s;}
+
+.modal_button:hover {transform: scale(1.25);}
+
+.thought {text-align: center;
+           color: white;
+           font-family: unset;}
+
+
+
+
