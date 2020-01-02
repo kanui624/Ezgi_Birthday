@@ -1,0 +1,34 @@
+      
+    <!-- Button trigger modal -->
+        
+    <!-- Button trigger modal -->
+
+        <a data-toggle="modal" data-target="#myModal" ><%= image_tag 'Background.jpg', class: 'rsvp_image' %></a>
+    
+    
+        
+  
+
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">-</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+            <div class="modal-body">
+              <%= simple_form_for @ekbdp, url: ekbdps_path(@ekbdp) do |f| %>
+              <%= f.input :item %>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">n</button>
+            <%= f.submit "y", class: 'btn btn-secondary' %>
+          </div>
+         <% end %>
+        </div>
+      </div>
+    </div> 
