@@ -77,10 +77,35 @@
       <hr class="line">
       <br />
       <a data-toggle="modal" data-target="#myModal" ><%= image_tag 'Background.jpg', class: 'rsvp_image' %></a>
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">-</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+              <div class="modal-body">
+                <%= simple_form_for @ekbdp do |f| %>
+                <%= f.input :name %>
+                <%= f.input :email %>
+                <%= f.input :number %>
+              </div>
+            <div class="modal-footer">
+              <%= f.submit 'RSVP' %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div> 
+
       <br />
       <br />
       <br />
       <br />
+      
     </div>
   </body>
 </html>

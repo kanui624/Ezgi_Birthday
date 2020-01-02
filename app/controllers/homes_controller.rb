@@ -5,19 +5,27 @@ class HomesController < ApplicationController
 
   end 
 
+  # def new
+  #   @ekbdp = Ekbdp.new
+  # end 
+
   def show 
-    # @ekbdp = Ekbdp.new
+    @ekbdp = Ekbdp.new
   end
 
-  def create 
-    Ekbdp.create(ekbdp_params)
-    redirect_to show_path
-  end 
+  # def create 
+  #   @ekbdp = Ekbdp.create(ekbdp_params)
+  #   if @ekbdp.valid?
+  #     redirect_to show_path
+  #   else 
+  #     render :show, status: :uprocessible_entity
+  #   end
+  # end 
 
-  private 
+  # private 
 
-  def ekbdp_params
-    params.require(:ekbdp).permit(:item)
-  end
+  # def ekbdp_params
+  #   params.require(:ekbdp).permit(:name, :email, :number)
+  # end
 
 end
