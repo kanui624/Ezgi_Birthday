@@ -1,12 +1,12 @@
 class HomesController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   
   def index
 
   end 
 
   def show 
-    @ekbdp = Ekbdp.new
+    # @ekbdp = Ekbdp.new
   end
 
   def create 

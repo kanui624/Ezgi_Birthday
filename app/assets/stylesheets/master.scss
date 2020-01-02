@@ -4,14 +4,14 @@
 
 
 
-body {background: #FAF0E6}
+body {background: #FAEBD7}
 
 h1 {color: white;
     text-align: center;}
 
 h2 {}
 
-h3 {font-size: 20px;
+h3 {font-size: 15px;
     font-weight: 5px;
     margin-bottom: 0;
     font-family: unset;}
@@ -28,11 +28,11 @@ h3 {font-size: 20px;
 
 .img-fluid:hover {transform: scale(1.2);}
 
-.img-fluid-port {transition: transform .3s;
+.venue_pics {transition: transform .3s;
                  border-radius: 10px;
-                 height: 200px;}
+                 height: 100px;}
 
-.img-fluid-port:hover {transform: scale(1.85);}
+.venue_pics:hover {transform: scale(1.85);}
 
 .back {transition: transform .3s;
        position: fixed;
@@ -70,5 +70,10 @@ h3 {font-size: 20px;
 .rsvp_image {height: 50px;
 }
 
+.baby_ezgi {transition: transform .3s;
+                 border-radius: 10px;
+                 height: 50px;}
+
+.baby_ezgi:hover {transform: scale(1.85);}
 
 
