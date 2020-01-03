@@ -5,9 +5,9 @@ class HomesController < ApplicationController
 
   end 
 
-  def end
-    @ekbdp = Ekbdp.all
-  end 
+  # def end
+  #   @ekbdp = Ekbdp.all
+  # end 
 
   def show 
     @ekbdp = Ekbdp.new

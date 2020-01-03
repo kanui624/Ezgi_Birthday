@@ -10,7 +10,7 @@ class EkbdpsController < ApplicationController
 
   def create 
     @ekbdp = Ekbdp.create(ekbdp_params)
-      redirect_to end_path
+      redirect_to show_path
   end 
 
   private 
