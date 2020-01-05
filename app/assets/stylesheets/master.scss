@@ -85,8 +85,13 @@ h3 {font-size: 15px;
        right: 0;
        bottom: 0;}
 
-.sleek {height: 100px;
-        margin: auto;}
+.sleek {margin: auto;}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  height: 550px;
+  width: 75%;
+}
+
 
 
 
