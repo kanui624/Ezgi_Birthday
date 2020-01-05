@@ -79,18 +79,23 @@ h3 {font-size: 15px;
 
 .baby_ezgi:hover {transform: scale(1.85);}
 
-.caro {margin: auto;
+.carousel-inner img {
+  margin: auto;
+}
+
+/*.caro {margin: auto;
        top: 0;
        left: 0;
        right: 0;
-       bottom: 0;}
+       bottom: 0;}*/
 
-.sleek {margin: auto;}
+/*.sleek {margin: auto;}*/
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  height: 550px;
-  width: 75%;
+  height: 60%;
+  width: 60%;
 }
+
 
 
 
