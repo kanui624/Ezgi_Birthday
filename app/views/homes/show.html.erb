@@ -1,105 +1,95 @@
 <html>
   <body>
+
       <div class="back_link">
         <a href= / ><%= image_tag 'Background.jpg', class: 'back' %></a>
       </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div align="center">
-      <div class="headline">
-        <h3><!-- Hello, --></h3>
-        <br />
-        <h3><!-- Do you happen to know this lil Turkish Sunflower? --></h3>
-      </div>
-      <br />
-      <hr class="line">
-      <br />
-        <div class="photo">
-            <%= image_tag 'White-Background.jpg', class: 'baby_ezgi' %>
-        </div>       
-      <br />
-      <hr class="line">
-      <br />
-      <div class="headline">
-        <h3><!-- If not, her Name is Ezgi Koca, and her birthday is coming up! --></h3>
-        <br />
-        <h3><!-- January, 26th to be specific< --></h3>
-        <br />
-        <h3><!-- And if you have received this link, you’re invited :) --></h3>
-        <br />
-        <h3><!-- The party will be held in *general area* on Saturday, January 25th, 2020 --></h3>
-        <br />
-        <h3><!-- And this is the place... --></h3>
-      </div>
-      <br />
-      <hr class="line">
-      <br />
-      <br />
-        <table>
-          <tr>
-              <th><%= image_tag 'White-Background.jpg', class: 'venue_pics' %></th>
-              <th><%= image_tag 'White-Background.jpg', class: 'venue_pics' %></th>
-          </tr>
-          <tr>
-              <th><%= image_tag 'White-Background.jpg', class: 'venue_pics' %></th>
-              <th><%= image_tag 'White-Background.jpg', class: 'venue_pics' %></th>
-          </tr>
-        </table>
-      <br />
-      <br />
-      <hr class="line">
-      <br />
-      <div class="headline">
-        <h3><!-- There will be food, drinks, a DJ, and possibly a bounce house cause that sounds lit too --></h3>
-        <br />
-        <h3><!-- If you're available to attend, all you have to do is... --></h3>
-        <br />
-        <h3><!-- - click the *picture link* below --></h3> 
-        <br />
-        <h3><!-- - type your name, email, and phone number --></h3>
-        <br />
-        <h3><!-- - hit ‘RSVP’ --></h3>
-        <br />
-        <h3><!-- And that's it! --></h3>
-        <br />
-        <h3><!-- You will be contacted via email with additional details like address and time of arrival --></h3>
-        <br /> 
-        <h3><!-- Also if you have any questions, they will be answered via email as well --></h3>
-        <br />
-        <h3><!--  And Oh Yeah! The Biggest rule is DON'T TELL EZGI! --></h3>
-        <br /> 
-        <h3><!-- This is intended to be a surprise --></h3>
-      </div>
-      <br />
-      <hr class="line">
-      <br />
-      <a data-toggle="modal" data-target="#myModal" ><%= image_tag 'Background.jpg', class: 'rsvp_image' %></a>
 
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">-</span>
-              </button>
-              <h4 class="modal-title" id="myModalLabel"></h4>
-            </div>
-              <div class="modal-body">
-                <%= simple_form_for @ekbdp do |f| %>
-                <%= f.input :name %>
-                <%= f.input :email %>
-                <%= f.input :number %>
-              </div>
-            <div class="modal-footer">
-              <%= f.submit 'RSVP' %>
-            </div>
-            <% end %>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+    <script>
+      $(function(){
+        $('.carousel').carousel({
+          interval: 1000000
+        });
+      });
+    </script>
+
+    <div class="caro">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <%= image_tag 'White-Background.jpg', class: 'sleek' %>
           </div>
+          <div class="carousel-item">
+            <%= image_tag 'White-Background.jpg', class: 'sleek' %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag 'White-Background.jpg', class: 'sleek' %>
+          </div>
+
+          <br />
+          <br />
+
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
         </div>
-      </div> 
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div align="center">
+        <a data-toggle="modal" data-target="#myModal" ><%= image_tag 'Background.jpg', class: 'rsvp_image' %></a>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+              </div>
+                <div class="modal-body">
+                  <%= simple_form_for @ekbdp do |f| %>
+                  <%= f.input :name %>
+                  <%= f.input :email %>
+                  <%= f.input :number %>
+                  <%= f.submit 'RSVP', class: 'btn btn-secondary' %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
 
       <br />
       <br />
