@@ -10,10 +10,11 @@ class EkbdpsController < ApplicationController
 
   def create 
     @ekbdp = Ekbdp.create(ekbdp_params)
-    if @ekbdp.invalid?
-      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
-    end
-    redirect_to show_path
+      if @ekbdp.valid?
+        redirect_to seeyouthere_path
+      else 
+        redirect_to invalidinformation_path
+      end
   end 
 
   private 

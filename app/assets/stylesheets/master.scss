@@ -7,7 +7,7 @@
 body {margin:0; 
       padding:0;
       background-image: asset-url("wheat.jpeg");
-      background-color: #FAEBD7;
+      background-color: #FFE4C4;
       background-repeat: no-repeat; 
       background-attachment: fixed; 
       background-size: cover;
@@ -108,6 +108,32 @@ h3 {font-size: 15px;
   justify-content: center ;
 }
 
+
+.modal-content {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    /*background-image: asset-url("mayb.jpeg");
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;*/
+    /*background-color: #FFFAF0;*/
+    background: transparent;
+    border-color: white;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+ .btn {background: transparent;}
+
+ .btn-secondary {color: white;
+                 font-family: 'Caveat', cursive;}
+
+ .simple_form label {color: white;
+                     font-family: 'Caveat', cursive;}
 
 
 
