@@ -14,9 +14,6 @@
     <br />
     <br />
     <br />
-    
-
-      <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
       <script>
         $(function(){
@@ -26,31 +23,37 @@
         });
       </script>
 
-      <script>
-        $(function() {
-          $('.carousel').swipe( {
-            //Generic swipe handler for all directions
-            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-              $(this).text("You swiped " + direction );  
-            }
-          });
-
-          //Set some options later
-          $('.carousel').swipe( {fingers:1} );
-        });
-      </script>
-        
-
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <%= image_tag 'invited.png', class: 'sleek' %>
+            <%= image_tag '0_hey.png'%>
           </div>
           <div class="carousel-item">
-            <%= image_tag 'invited.png', class: 'sleek' %>
+            <%= image_tag '1_guesswhat.png'%>
           </div>
           <div class="carousel-item">
-            <%= image_tag 'invited.png', class: 'sleek' %>
+            <%= image_tag '2_itsmeezgi.png'%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag '3_bday.png'%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag '4_jan.png'%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag '5_invited.png'%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag '6_dance.png'%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag '7_needyou.png'%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag '8_myfriends.png'%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag '9_instruct.png'%>
           </div>
 
           <br />
@@ -60,6 +63,15 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+
           </ol>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -75,7 +87,7 @@
       <br />
 
       <div align="center">
-        <a data-toggle="modal" data-target="#myModal" ><%= image_tag 'clip.png', class: 'rsvp_image' %></a>
+        <a data-toggle="modal" data-target="#myModal" ><%= image_tag 'hair.png', class: 'rsvp_image' %></a>
 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
