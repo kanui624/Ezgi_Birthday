@@ -4,6 +4,7 @@ class CreateEkbdps < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :email
       t.string :number
+      t.integer :guests, :default => '0'
       t.timestamps
     end
   end

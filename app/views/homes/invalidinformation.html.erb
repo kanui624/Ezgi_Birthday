@@ -1,1 +1,62 @@
-<h1> invalid information </h1>
+<html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  </head>
+    <body>
+      <div class="back_link">
+        <a href= / ><%= image_tag 'white4.png', class: 'back' %></a>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+        <script>
+          $(function(){
+            $('.carousel').carousel({
+              interval: 1000000
+            });
+          });
+        </script>
+
+        <div align="center">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <%= image_tag 'invalid_info.png'%>
+              </div>
+
+              <br />
+              <br />
+
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              </ol>
+
+            </div>
+          </div>
+
+          <a data-toggle="modal" data-target="#myModal" ><%= image_tag 'hair.png', class: 'rsvp_image' %></a>
+
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <%= simple_form_for @ekbdp do |f| %>
+                  <%= f.input :name, class: 'form_change'%>
+                  <%= f.input :email, class: 'form_change' %>
+                  <%= f.input :number, class: 'form_change' %>
+                  <%= f.input :guests, class: 'form_change' %>
+                  <%= f.submit 'rsvp', class: 'btn btn-secondary' %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+    </body>
+</html>

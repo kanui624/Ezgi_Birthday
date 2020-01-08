@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_01_02_201524) do
     t.string "name"
     t.string "email"
     t.string "number"
+    t.integer "guests", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

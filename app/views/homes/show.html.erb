@@ -97,9 +97,10 @@
                 <%= f.input :name, class: 'form_change'%>
                 <%= f.input :email, class: 'form_change' %>
                 <%= f.input :number, class: 'form_change' %>
-                <%= f.submit 'RSVP', class: 'btn btn-secondary' %>
+                <%= f.input :guests, default: '0', class: 'form_change' %>
+                <%= f.submit 'rsvp', class: 'btn btn-secondary' %>
                 <% end %>
-              </div>
+              </div
             </div>
           </div>
         </div> 

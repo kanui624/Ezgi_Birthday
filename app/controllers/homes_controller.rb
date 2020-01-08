@@ -5,8 +5,8 @@ class HomesController < ApplicationController
 
   end 
 
-  def new
-    @ekbdp = Ekbdp.all
+  def invalidinformation
+    @ekbdp = Ekbdp.new
   end 
 
   def show 

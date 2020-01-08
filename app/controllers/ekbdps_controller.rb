@@ -8,6 +8,10 @@ class EkbdpsController < ApplicationController
     
   end 
 
+  def invalidinformation
+
+  end
+
   def create 
     @ekbdp = Ekbdp.create(ekbdp_params)
       if @ekbdp.valid?
@@ -20,7 +24,7 @@ class EkbdpsController < ApplicationController
   private 
 
   def ekbdp_params
-    params.require(:ekbdp).permit(:name, :email, :number)
+    params.require(:ekbdp).permit(:name, :email, :number, :guests)
   end
 
 end
