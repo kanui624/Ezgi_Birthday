@@ -4,16 +4,6 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
   </head>
     <body>
-      <div class="back_link">
-        <a href= / ><%= image_tag 'white4.png', class: 'back' %></a>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
         <script>
           $(function(){
@@ -23,22 +13,50 @@
           });
         </script>
 
-        <div align="center">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <%= image_tag '2_itsmeezgi.png'%>
+        <div class=" center-block">
+            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <%= image_tag 'seeyousoon.png'%>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag 'lit.png'%>
+                </div>
+
+                <br />
+                <br />
+
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+
               </div>
-
-              <br />
-              <br />
-
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              </ol>
-
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
-        </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div align="center">
+            <a href= / ><%= image_tag 'white4.png', class: 'back_home' %></a>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
     </body>
 </html>

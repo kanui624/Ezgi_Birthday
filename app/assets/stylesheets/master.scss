@@ -43,14 +43,6 @@ h3 {font-size: 15px;
 
 .venue_pics:hover {transform: scale(1.85);}
 
-.back {transition: transform .3s;
-       position: fixed;
-       margin: auto;
-       height: 100px;
-       border-radius: 30px}
-
-.back:hover {transform: scale(1.15);}
-
 .photo {text-align: center}
 
 .line {border-top: 5px double white;
@@ -82,6 +74,11 @@ h3 {font-size: 15px;
 
 .rsvp_image:hover {transform: scale(1.25);}
 
+.back_home {transition: transform .3s;
+            height: 300px;}
+
+.back_home:hover {transform: scale(1.25);}
+
 .baby_ezgi {transition: transform .3s;
                  border-radius: 10px;
                  height: 50px;}
@@ -91,6 +88,8 @@ h3 {font-size: 15px;
 .carousel-inner img {
   margin: auto;
 }
+
+/*.carousel {margin-top: 100px;}*/
 
 /*.content {margin-top: auto;
           margin-left: auto;
@@ -134,7 +133,6 @@ h3 {font-size: 15px;
 
 .simple_form label {color: white;
                      font-family: 'Caveat', cursive;}
-
 
 
 
