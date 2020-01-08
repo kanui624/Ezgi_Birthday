@@ -9,7 +9,7 @@ class HomesController < ApplicationController
     @ekbdp = Ekbdp.new
   end 
 
-  def show 
+  def hey 
     @ekbdp = Ekbdp.new
   end
 
