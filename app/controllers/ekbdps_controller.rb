@@ -15,7 +15,7 @@ class EkbdpsController < ApplicationController
   def create 
     @ekbdp = Ekbdp.create(ekbdp_params)
       if @ekbdp.valid?
-        redirect_to seeyouthere_path
+        redirect_to itslit_path
       else 
         redirect_to invalidinformation_path
       end
